@@ -35,11 +35,31 @@
 
 ## 注意事项
 
+1.setup这个脚本会：
+自动安装所有必要的Python包（selenium, webdriver-manager, requests, pdfkit, beautifulsoup4）
+检查wkhtmltopdf是否已正确安装
+如果wkhtmltopdf未安装，会提供详细的安装指导
+如果提示需要安装wkhtmltopdf：
+访问 https://wkhtmltopdf.org/downloads.html
+下载适合您Windows系统的安装包
+运行安装程序
+确保将安装目录添加到系统环境变量中
+
+2.install_chrome_dirver这个脚本会：
+尝试自动下载和安装正确版本的Chrome驱动
+如果自动安装失败，会提供手动安装的指导
+如果自动安装失败，请手动安装Chrome驱动：
+打开Chrome浏览器
+点击右上角三个点 -> 帮助 -> 关于Google Chrome，查看您的Chrome版本
+访问 https://chromedriver.chromium.org/downloads
+下载与您的Chrome版本匹配的驱动
+将下载的chromedriver.exe放在程序目录下
+安装完成后，运行主程序
+
 - 请确保您有稳定的网络连接
 - 程序运行过程中请不要关闭浏览器窗口
 - 如果遇到登录问题，请确认您的用户名和密码是否正确
 - 提取过程可能需要几分钟时间，请耐心等待
-
 ## 故障排除
 
 如果遇到问题：
